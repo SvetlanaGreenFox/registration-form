@@ -1,0 +1,41 @@
+.promo {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 735px;
+
+	@media(max-width: 1200px) {
+		display: none;
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		background-color: var(--dark-color);
+		border-radius: 15px;
+	}
+
+	&__img {
+		width: 100%;
+		max-width: 559px;
+		height: auto;
+		margin-bottom: 90px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 60px;
+		color: #FFFFFF;
+		margin-bottom: 4px;
+	}
+
+	&__subtitle {
+		display: block;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 30px;
+		color: #FFFFFF;
+	}
+}
